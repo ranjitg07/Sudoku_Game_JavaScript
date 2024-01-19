@@ -6,9 +6,10 @@ const CONSTANT = {
     LEVEL_NAME: [
         'Easy',
         'Medium',
-        'Very Hard',
+        'Hard',
+        'Very hard',
         'Insane',
-        'InHuman'
+        'Inhuman'
     ],
     LEVEL: [29, 38, 47, 56, 65, 74]
 }
