@@ -1,3 +1,12 @@
+// Instructions show and close button
+function showInstructions() {
+    document.getElementById('instructions').style.display = 'block';
+  }
+
+function hideInstructions() {
+    document.getElementById('instructions').style.display = 'none';
+  }
+//------------------------
 document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
     const isDarkMode = document.body.classList.contains('dark');

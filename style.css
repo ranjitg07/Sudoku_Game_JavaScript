@@ -425,7 +425,7 @@ nav {
 .footer-start-screen{
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 40px;
     color: var(--color-txt)
 }
 
@@ -436,12 +436,6 @@ nav {
     color: var(--color-txt);
     font-size: 0.8rem;
 }
-
-/* span:after,
-span:before{
-    content:"\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
-} */
 
 .social-logo{
     display: grid;
@@ -488,6 +482,71 @@ span:before{
     }
   }
 
+/* How to play? pop up style */
+
+.btn-instruct{
+    padding: 10px;
+    background-color: var(--bg-main);
+    color: var(--color-txt);
+    border-radius: 5PX;
+    font-size: 1rem;
+    font-family: "Potta One", cursive;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-instruct:hover {
+    border: 2px solid var(--blue);
+}
+
+.i-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.i-nav h2{
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+#instructions {
+    display: none;
+    line-height: 25px;
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    border: 2px solid #333;
+  }
+
+
+#instructions p{
+    font-size: 0.8rem;
+}
+
+.btn-close{
+   height: 25px;
+    width: 25px;
+    background-color: var(--bg-main);
+    color: var(--color-txt);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-close:hover {
+    border: 2px solid var(--blue);
+}
+
+/* ------------------------- */
+
+
 /* Responsive ----------------------------*/
 
 @media only screen and (max-width: 800px) {
@@ -522,6 +581,29 @@ span:before{
 
     .main {
         height: 100vh;
+    }
+
+    .btn-instruct{
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    .i-nav h2{
+        font-size: 0.7rem;
+    }
+
+    #instructions {
+        width: 100%;
+        height: 80%;
+        line-height: 22px;
+      }
+
+    #instructions p{
+        font-size: 0.5rem;
+    }
+
+    .btn-close{
+        height: 20px;
+         width: 20px;
     }
 
     .footer-start-screen{

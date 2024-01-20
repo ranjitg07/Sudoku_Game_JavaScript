@@ -39,10 +39,35 @@
         <div class="screen">
             <!-- start screen -->
             <div class="start-screen active" id="start-screen">
+                <!-- How to play button -->
+                <button class="btn-instruct" onclick="showInstructions()">How to play?</button>
+                <!------------------------>
                 <input type="text" placeholder="Your name" maxlength="11" class="input-name" id="input-name">
                 <div class="btn" id="btn-level" title="click to choose difficulty level">Easy</div>
                 <div class="btn" id="btn-continue">Continue</div>
                 <div class="btn btn-blue" id="btn-play">New Game</div>
+
+                <!-- Instructions Pop up -->
+                <div id="instructions">
+                    <div class="i-nav">
+                        <h2>How to Play Sudoku?</h2>
+                        <button class="btn-close" onclick="hideInstructions()">x</button>
+                    </div>
+                    <br>
+                    <p> <i>Rule:</i> Fill a 9x9 grid with digits from 1 to 9, ensuring that each row, each column, and each 3x3 subgrid contains all the digits without repetition.</p> <br>
+                    <p> <i>Instructions: </i></p>
+                    <p> 1.Enter your name. <br>
+                        2.Choose a difficulty level. <br>
+                        3.Click "New Game" to generate a Sudoku puzzle. <br>
+                        4.Fill in the cells with numbers from 1 to 9. <br>
+                        5.Use the pause button to pause and resume the game. <br>                    
+                        6.After completing the game, view your total time and start a new game if desired. <br>
+                        7.If you close the app, use the "Continue" button on the home page to pick up where you left off. <br> <br>
+                        <hr>
+                    </p>
+                    <center><p class="enjoy">Enjoy playing Sudoku!</p></center> 
+                </div>
+                <!------------------------->
 
                 <!-- Start Footer Section -->
 
