@@ -1,5 +1,5 @@
 # Live Link:
-!["Make Sudoku Game With HTML CSS JavaScript"](https://sudoku-game-javascript.vercel.app/)
+!["Click to see the live project"](https://sudoku-game-javascript.vercel.app/)
 
 # Sudoku Game
 What is Sudoku?
