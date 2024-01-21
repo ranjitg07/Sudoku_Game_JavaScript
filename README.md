@@ -1,4 +1,4 @@
-**Sudoku Game**
+# Sudoku Game
 What is Sudoku?
 Sudoku is a classic puzzle game that involves filling a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid (also called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9.
 
@@ -14,7 +14,7 @@ Sudoku is a classic puzzle game that involves filling a 9x9 grid with digits so 
 
 !["Make Sudoku Game With HTML CSS JavaScript"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
 
-**Features**
+# Features
 
 1.Player Name:
 Add your name before starting the game. Your name will be displayed throughout the game.
@@ -46,12 +46,19 @@ If you accidentally reload or close the app, the game will remember your last pl
 10.Dark Mode:
 Implemented a dark mode feature accessible through the navigation bar.
 
-**How to Play**
+# How to Play
 1.Enter your name.
+
 2.Choose a difficulty level.
+
 3.Click "New Game" to generate a Sudoku puzzle.
+
 4.Fill in the cells with numbers from 1 to 9.
+
 5.Use the pause button to pause and resume the game.
+
 6.After completing the game, view your total time and start a new game if desired.
+
 7.If you close the app, use the "Continue" button on the home page to pick up where you left off.
-8.Enjoy playing Sudoku! If you have any feedback or suggestions, feel free to contribute.
+
+Enjoy playing Sudoku! If you have any feedback or suggestions, feel free to contribute.
