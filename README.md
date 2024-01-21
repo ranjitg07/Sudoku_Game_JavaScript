@@ -1,5 +1,5 @@
 # Live Link:
-!["Click to see the live project"](https://sudoku-game-javascript.vercel.app/)
+    https://sudoku-game-javascript.vercel.app/
 
 # Sudoku Game
 What is Sudoku?
