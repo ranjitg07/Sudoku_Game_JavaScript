@@ -3,6 +3,7 @@
     --bg-main: #e4e4e4;
     --bg-body: #fff;
     --color-txt: #000;
+    
     --filled-color: #000;
     --filled-bg: #caf0f8;
 
@@ -31,6 +32,7 @@
     --color-txt: #6a6a6a;
     --filled-color: #4f4f63;
     --filled-bg: #000;
+    
 }
 
 * {
@@ -152,7 +154,7 @@ nav {
 }
 
 .input-name {
-    height: 80px;
+    height: 70px;
     width: 280px;
     border-radius: var(--border-radius);
     outline: 0;
@@ -434,14 +436,14 @@ nav {
     justify-content: center;
     padding-top: 12px;
     color: var(--color-txt);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .social-logo{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-
+    margin-bottom: 25px;
 }
 
 .sm-logo{
@@ -485,7 +487,8 @@ nav {
 /* How to play? pop up style */
 
 .btn-instruct{
-    padding: 10px;
+    height: 50px;
+    width: 180px;
     background-color: var(--bg-main);
     color: var(--color-txt);
     border-radius: 5PX;
@@ -497,7 +500,7 @@ nav {
 }
 
 .btn-instruct:hover {
-    border: 2px solid var(--blue);
+    background-color: var(--blue);
 }
 
 .i-nav {
@@ -545,6 +548,136 @@ nav {
 }
 
 /* ------------------------- */
+
+
+/* Sudoku Solver CSS */
+
+.main-grid-cell1 {
+    height: 40px;
+    width: 40px;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-main);
+    color: var(--blue);
+    display: grid;
+    place-items: center;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+.main-grid-cell1:hover{
+    border: 2px solid var(--blue);
+}
+ 
+.main-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    margin-bottom: 40px;
+}
+
+.main-btn-box{
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.main-btn-box:hover{
+    background-position: 100% 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.main-btn-box:focus {
+    outline: none;
+}
+
+
+#GetPuzzle, #SolvePuzzle{
+    height: 50px;
+    width: 180px;
+    background-color: var(--bg-main);
+    color: var(--color-txt);
+    border-radius: 10PX;
+    font-size: 1rem;
+    font-family: "Potta One", cursive;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#GetPuzzle:hover{
+    background-color: var(--blue);
+}
+
+#SolvePuzzle:hover{
+    background-color: var(--blue);
+}
+
+.btn-play-sudoku{
+    height: 50px;
+    width: 180px;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-main);
+    color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: "Potta One", cursive;
+    cursor: pointer;
+    border: none;
+    margin-top: -80px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+    
+}
+
+.btn-play-sudoku:hover{
+    background-position: 100% 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-play-sudoku.color1 {
+    /* background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75); */
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.s-solver{
+    height: 80px;
+    width: 280px;
+    background-color: var(--bg-main);
+    color: #fff;
+    border-radius: var(--border-radius);
+    display: grid;
+    place-items: center;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+}
+
+
+.s-solver:hover {
+    background-position: 100% 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.s-solver:focus {
+    outline: none;
+}
+
+.s-solver.color1 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+/* ----------------- */
 
 
 /* Responsive ----------------------------*/
@@ -607,6 +740,53 @@ nav {
     }
 
     .footer-start-screen{
-        padding-top: 70px;
+        padding-top: 20px;
+    }
+
+    .footer-main-screen{
+        padding-bottom: 50px;
+        font-size: 1rem;
+    }
+
+    .btn-instruct{
+        height: 40px;
+        width: 130px;
+        margin-top: -40px;
+    }
+    
+    .s-solver{
+        height: 55px;
+        width: 280px;
+    }
+    /* Sudoku Solver Responsive */
+    
+    .main-grid-cell1 {
+        margin: 1px;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .main-btn{
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+    
+    #GetPuzzle, #SolvePuzzle{
+        height: 50px;
+        width: 150px;
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+        font-family: "Potta One", cursive;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    
+    .btn-play-sudoku{
+        height: 50px;
+        width: 180px;
+        margin-bottom: -30px;
     }
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mobile status bar color -->
+    <meta name="theme-color" content="#fff">
+    <title>Sudoku</title>
+    <link rel="shortcut icon" href="./static/images/icon.png" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- top nav -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Sudoku Solver</a>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- end top nav -->
+
+    <!-- main -->
+    <div class="main">
+        <div class="main-sudoku-grid">
+        <div id="0" class="main-grid-cell1"></div>
+        <div id="1" class="main-grid-cell1"></div>
+        <div id="2" class="main-grid-cell1"></div>
+        <div id="3" class="main-grid-cell1"></div>
+        <div id="4" class="main-grid-cell1"></div>
+        <div id="5" class="main-grid-cell1"></div>
+        <div id="6" class="main-grid-cell1"></div>
+        <div id="7" class="main-grid-cell1"></div>
+        <div id="8" class="main-grid-cell1"></div>
+        <div id="9" class="main-grid-cell1"></div>
+        <div id="10" class="main-grid-cell1"></div>
+        <div id="11" class="main-grid-cell1"></div>
+        <div id="12" class="main-grid-cell1"></div>
+        <div id="13" class="main-grid-cell1"></div>
+        <div id="14" class="main-grid-cell1"></div>
+        <div id="15" class="main-grid-cell1"></div>
+        <div id="16" class="main-grid-cell1"></div>
+        <div id="17" class="main-grid-cell1"></div>
+        <div id="18" class="main-grid-cell1"></div>
+        <div id="19" class="main-grid-cell1"></div>
+        <div id="20" class="main-grid-cell1"></div>
+        <div id="21" class="main-grid-cell1"></div>
+        <div id="22" class="main-grid-cell1"></div>
+        <div id="23" class="main-grid-cell1"></div>
+        <div id="24" class="main-grid-cell1"></div>
+        <div id="25" class="main-grid-cell1"></div>
+        <div id="26" class="main-grid-cell1"></div>
+        <div id="27" class="main-grid-cell1"></div>
+        <div id="28" class="main-grid-cell1"></div>
+        <div id="29" class="main-grid-cell1"></div>
+        <div id="30" class="main-grid-cell1"></div>
+        <div id="31" class="main-grid-cell1"></div>
+        <div id="32" class="main-grid-cell1"></div>
+        <div id="33" class="main-grid-cell1"></div>
+        <div id="34" class="main-grid-cell1"></div>
+        <div id="35" class="main-grid-cell1"></div>
+        <div id="36" class="main-grid-cell1"></div>
+        <div id="37" class="main-grid-cell1"></div>
+        <div id="38" class="main-grid-cell1"></div>
+        <div id="39" class="main-grid-cell1"></div>
+        <div id="40" class="main-grid-cell1"></div>
+        <div id="41" class="main-grid-cell1"></div>
+        <div id="42" class="main-grid-cell1"></div>
+        <div id="43" class="main-grid-cell1"></div>
+        <div id="44" class="main-grid-cell1"></div>
+        <div id="45" class="main-grid-cell1"></div>
+        <div id="46" class="main-grid-cell1"></div>
+        <div id="47" class="main-grid-cell1"></div>
+        <div id="48" class="main-grid-cell1"></div>
+        <div id="49" class="main-grid-cell1"></div>
+        <div id="50" class="main-grid-cell1"></div>
+        <div id="51" class="main-grid-cell1"></div>
+        <div id="52" class="main-grid-cell1"></div>
+        <div id="53" class="main-grid-cell1"></div>
+        <div id="54" class="main-grid-cell1"></div>
+        <div id="55" class="main-grid-cell1"></div>
+        <div id="56" class="main-grid-cell1"></div>
+        <div id="57" class="main-grid-cell1"></div>
+        <div id="58" class="main-grid-cell1"></div>
+        <div id="59" class="main-grid-cell1"></div>
+        <div id="60" class="main-grid-cell1"></div>
+        <div id="61" class="main-grid-cell1"></div>
+        <div id="62" class="main-grid-cell1"></div>
+        <div id="63" class="main-grid-cell1"></div>
+        <div id="64" class="main-grid-cell1"></div>
+        <div id="65" class="main-grid-cell1"></div>
+        <div id="66" class="main-grid-cell1"></div>
+        <div id="67" class="main-grid-cell1"></div>
+        <div id="68" class="main-grid-cell1"></div>
+        <div id="69" class="main-grid-cell1"></div>
+        <div id="70" class="main-grid-cell1"></div>
+        <div id="71" class="main-grid-cell1"></div>
+        <div id="72" class="main-grid-cell1"></div>
+        <div id="73" class="main-grid-cell1"></div>
+        <div id="74" class="main-grid-cell1"></div>
+        <div id="75" class="main-grid-cell1"></div>
+        <div id="76" class="main-grid-cell1"></div>
+        <div id="77" class="main-grid-cell1"></div>
+        <div id="78" class="main-grid-cell1"></div>
+        <div id="79" class="main-grid-cell1"></div>
+        <div id="80" class="main-grid-cell1"></div>
+        </div>
+
+        <div class="main-btn">
+            <div class="main-btn-box">
+                <button id="GetPuzzle" class="btn-getpuzzle"> Get Puzzle </button>
+                <button id="SolvePuzzle" class="btn-solvepuzzle"> Solve Puzzle </button>
+            </div>
+            
+        </div>
+        <div class="btn-play-sudoku color1">
+            <a href="./index.html">Play Sudoku</a>
+        </div>
+                 
+        <div class="footer-main-screen">
+            <span class="footer">Made by @Ranjit Gupta</span>
+        </div>
+    </div>
+        <!-- end main -->
+</div>
+    <script src="./static/js/solver.js"></script>
+    
+</body>
+
+</html>
