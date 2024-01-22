@@ -41,9 +41,11 @@ GetPuzzle.onclick = function () {
 		board = response.board
 		FillBoard(board)
 	}
-	xhrRequest.open('get', 'https://sugoku.onrender.com/board?difficulty=easy')
-	//we can change the difficulty of the puzzle the allowed values of difficulty are easy, medium, hard and random
-	xhrRequest.send()
+	// Add a timestamp to the URL to avoid caching
+    var timestamp = new Date().getTime();
+    xhrRequest.open('get', 'https://sugoku.onrender.com/board?difficulty=easy&timestamp=' + timestamp)
+    //we can change the difficulty of the puzzle; the allowed values of difficulty are easy, medium, hard, and random
+    xhrRequest.send()
 }
 
 SolvePuzzle.onclick = () => {
