@@ -29,9 +29,25 @@ function FillBoard(board) {
 		}
 	}
 }
+const cells = document.querySelectorAll('.main-grid-cell1');
 
 let GetPuzzle = document.getElementById('GetPuzzle')
 let SolvePuzzle = document.getElementById('SolvePuzzle')
+
+// add space for each 9 cells
+const initGameGrid = () => {
+    let index = 0;
+
+    for (let i = 0; i < Math.pow(CONSTANT.GRID_SIZE,2); i++) {
+        let row = Math.floor(i/CONSTANT.GRID_SIZE);
+        let col = i % CONSTANT.GRID_SIZE;
+        if (row === 2 || row === 5) cells[index].style.marginBottom = '10px';
+        if (col === 2 || col === 5) cells[index].style.marginRight = '10px';
+
+        index++;
+    }
+}
+// --------------
 
 GetPuzzle.onclick = function () {
 	var xhrRequest = new XMLHttpRequest()
@@ -114,6 +130,7 @@ const init = () => {
     const darkmode = JSON.parse(localStorage.getItem('darkmode'));
     document.body.classList.add(darkmode ? 'dark' : 'light');
     document.querySelector('meta[name="theme-color"').setAttribute('content', darkmode ? '#1a1a2e' : '#fff');
+    initGameGrid();
 }
 
 init();
