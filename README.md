@@ -17,15 +17,15 @@ Sudoku is a classic puzzle game that involves filling a 9x9 grid with digits so 
 
 <h2>Start Screen</h2>
 
-!["This is the Main-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+!["This is the Main-Screen"](https://github.com/ranjitg07/Sudoku_Game_JavaScript/assets/51162069/3ecdfa41-1a6e-48cb-b094-15725eaa8b86 "This is the Main-Screen")
 
 <h2>Game Screen</h2>
 
-!["This is the Game-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+!["This is the Game-Screen"](https://github.com/ranjitg07/Sudoku_Game_JavaScript/assets/51162069/093fbb6e-8b4a-4d90-862e-0b6c5f7b25bd "This is the Game-Screen")
 
 <h2>Sudoku Solver</h2>
 
-!["This is the Sudoku-Solver-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+!["This is the Sudoku-Solver-Screen"](https://github.com/ranjitg07/Sudoku_Game_JavaScript/assets/51162069/4eb4bb3d-3bda-4a65-8354-6f40069c85a1 "This is the Sudoku-Solver-Screen")
 
 # Features
 
