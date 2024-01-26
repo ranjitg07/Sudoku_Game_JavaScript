@@ -1,5 +1,5 @@
 # Live Link:
-https://sudoku-game-javascript.vercel.app/
+<a target="_blank" href="https://sudoku-game-javascript.vercel.app/">Click To See The Live Project</a>
 
 # Sudoku Game
 What is Sudoku?
@@ -15,7 +15,17 @@ Sudoku is a classic puzzle game that involves filling a 9x9 grid with digits so 
 
 # Preview
 
-!["Make Sudoku Game With HTML CSS JavaScript"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+<h2>Start Screen</h2>
+
+!["This is the Main-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+
+<h2>Game Screen</h2>
+
+!["This is the Game-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
+
+<h2>Sudoku Solver</h2>
+
+!["This is the Sudoku-Solver-Screen"](https://user-images.githubusercontent.com/67447840/135793517-57b1d971-67c5-4561-bd70-43f26998a108.jpg "Make Sudoku Game With HTML CSS JavaScript")
 
 # Features
 
@@ -48,6 +58,9 @@ If you accidentally reload or close the app, the game will remember your last pl
 
 10.Dark Mode:
 Implemented a dark mode feature accessible through the navigation bar.
+
+11.Sudoku Solver:
+Implemented a sudoku solver where a user clicks on get puzzle, some numbers added in the board and when user click on Solve Puzzle the unoccupied space gets filled with right numbers. Used BackTraking to solve the sudoku puzzle.
 
 # How to Play
 1.Enter your name.
